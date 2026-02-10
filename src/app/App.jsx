@@ -1,4 +1,4 @@
-import { Card } from '../feature/card/ui/Card';
+import { Card } from '../feature/card';
 import styles from './App.module.css';
 
 function App() {
@@ -30,28 +30,26 @@ function App() {
   ];
 
   return (
-    <>
-      <main className={styles.page}>
-        <header className={styles.page_header}>
-          <h1 className={styles.page__title}>
-            <span className={styles.page__allocation}>Reliable, efficient delivery</span>
-            <br /> Powered by Technology
-          </h1>
-          <p className={styles.page__text}>
-            Our Artificial Intelligence powered tools use millions of project data points to ensure
-            that your project is successful
-          </p>
-        </header>
-        <div className={styles.page__cards}>
-          <Card content={contents[0]} />
-          <div className={styles.page__card_middle}>
-            <Card content={contents[1]} />
-            <Card content={contents[2]} />
-          </div>
-          <Card content={contents[3]} />
+    <main className={styles.page}>
+      <header className={styles.page_header}>
+        <h1 className={styles.page__title}>
+          <span className={styles.page__allocation}>Reliable, efficient delivery</span>
+          <br /> Powered by Technology
+        </h1>
+        <p className={styles.page__text}>
+          Our Artificial Intelligence powered tools use millions of project data points to ensure
+          that your project is successful
+        </p>
+      </header>
+      <div className={styles.page__cards}>
+        <Card content={contents[0]} />
+        <div className={styles.page__card_middle}>
+          <Card content={contents[1]} />
+          <Card content={contents[2]} />
         </div>
-      </main>
-    </>
+        <Card content={contents[3]} />
+      </div>
+    </main>
   );
 }
 

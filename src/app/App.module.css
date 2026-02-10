@@ -1,13 +1,13 @@
 .page {
   display: grid;
-  grid-template-rows: 0.3fr 0.5fr;
+  grid-template-rows: auto auto;
   justify-items: center;
   align-items: center;
 
-  height: 100vh;
-  height: 100dvh;
+  min-height: 100vh;
+  min-height: 100dvh;
   padding: 20px;
-  gap: 20px;
+  /* gap: 20px; */
 }
 
 .page_header {
@@ -16,7 +16,7 @@
 }
 
 .page__title {
-  font-weight: 700;
+  font-weight: 600;
   color: var(--grey-500);
   margin: 0;
   font-size: 1.8rem;
