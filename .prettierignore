@@ -1,0 +1,11 @@
+# Ignore artifacts
+build
+dist
+coverage
+# Ignore dependencies
+node_modules
+# Ignore specific files
+package-lock.json
+package.json
+.prettierrc.json
+eslint.config.js
