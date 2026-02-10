@@ -45,7 +45,7 @@
 
 @media screen and (max-width: 768px) {
   .page {
-    grid-template-rows: 0.1fr 1fr;
+    grid-template-rows: auto auto;
     align-items: start;
     gap: 50px;
   }
