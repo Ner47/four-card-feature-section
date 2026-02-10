@@ -1,0 +1,37 @@
+.card {
+  display: block;
+  background-color: var(--white);
+  max-width: 320px;
+  padding: 20px;
+  position: relative;
+
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 1px var(--grey-400-5);
+  overflow: hidden;
+}
+
+.card__line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  width: 100%;
+}
+
+.card__title {
+  margin: 0;
+  color: var(--grey-500);
+  font-size: 1.3rem;
+}
+
+.card__text {
+  font-weight: 200;
+  margin: 0 0 16px;
+}
+
+.card__img {
+  display: block;
+  float: right;
+}
