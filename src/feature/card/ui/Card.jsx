@@ -17,7 +17,7 @@ export function Card({ content }) {
   };
 
   return (
-    <article className={`${styles.card} ${content.type}`}>
+    <article className={styles.card}>
       <div className={styles.card__line} style={{ background: colors[content.color] }}></div>
       <h2 className={styles.card__title}>{content.title}</h2>
       <p className={styles.card__text}>{content.text}</p>

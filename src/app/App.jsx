@@ -8,28 +8,24 @@ function App() {
       title: 'Supervisor',
       text: 'Monitors activity to identify project roadblocks',
       img: 'supervisor',
-      type: styles.left,
     },
     {
       color: 'red',
       title: 'Team Builder',
       text: 'Scans our talent network to create the optimal team for your project',
       img: 'teamBuilder',
-      type: styles.center,
     },
     {
       color: 'orange',
       title: 'Karma',
       text: 'Regularly evaluates our talent to ensure quality',
       img: 'karma',
-      type: styles.center,
     },
     {
       color: 'blue',
       title: 'Calculator',
       text: 'Uses data from past projects to provide better delivery estimates',
       img: 'calculator',
-      type: styles.right,
     },
   ];
 
@@ -47,14 +43,12 @@ function App() {
           </p>
         </header>
         <div className={styles.page__cards}>
-          {contents.map((content) => (
-            <Card content={content} />
-          ))}
-
-          {/* <div className={styles.page__card_middle}>
-            <Card />
-            <Card />
-          </div> */}
+          <Card content={contents[0]} />
+          <div className={styles.page__card_middle}>
+            <Card content={contents[1]} />
+            <Card content={contents[2]} />
+          </div>
+          <Card content={contents[3]} />
         </div>
       </main>
     </>
